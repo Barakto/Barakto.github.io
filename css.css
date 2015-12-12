@@ -34,6 +34,14 @@ overflow: hidden;
 .gallery li{
 	float: left;
 	margin: 10px;
-
-
 }
+
+.gallery img{
+	display: block;
+	padding: 5px;
+}
+
+.gallery img:hover{
+	border: 1px solid #000;
+}
+

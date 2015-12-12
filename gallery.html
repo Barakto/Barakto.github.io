@@ -3,6 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="./jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
 	<link rel="stylesheet" href="./css/html5-reset.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Latest compiled and minified CSS -->
@@ -12,7 +19,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="./css.css">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
 	<title>The Big 4 of Hevy metal music </title>
 	<!--[if IE]>
   	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,10 +45,10 @@
 				    </div>
 				    <div class="collapse navbar-collapse" id="izvelne">
 				      <ul class="nav navbar-nav">
-				        <li><a href="index.html">Home</a></li>
-				        <li class="active"><a href="gallery.html">Gallery</a></li>
-						<li><a href="info.html">Infromation</a></li>
-						<li><a href="comments.html">Comments</a></li>
+				        <li><a class="fancybox" rel="group" href="index.html">Home</a></li>
+				        <li class="active"><a class="fancybox" rel="group" href="gallery.html">Gallery</a></li>
+						<li><a class="fancybox" rel="group" href="info.html">Infromation</a></li>
+						<li><a class="fancybox" rel="group" href="comments.html">Comments</a></li>
 				      </ul>
 				    </div>
 				</nav>
@@ -50,16 +57,13 @@
 		<section id="content">
 			<div class = "gallery">
 				<ul>
-					<li><img src="001.jpg" width="150" height ="100" alt="megadeath"></li>
-					<li><img src="002.jpg" width="150" height ="100" alt="megadeath"></li>
-					<li><img src="003.jpg" width="150" height ="100" alt="megadeath"></li>
-					<li><img src="004.jpg" width="150" height ="100" alt="megadeath"></li>
+					<li><a class="fancybox" rel="group" href= "./01.jpg" title ="MegaDeath"><img src="001.jpg" width="150" height ="100" alt="megadeath"></a></li>
+					<li><a class="fancybox" rel="group" href= "./02.jpg" title ="Metallica"><img src="002.jpg" width="150" height ="100" alt="metallica"></a></li>
+					<li><a class="fancybox" rel="group" href= "./03.jpg" title ="Anthrax"><img src="003.jpg" width="150" height ="100" alt="anthrax"></a></li>
+					<li><a class="fancybox" rel="group" href= "./04.jpg" title ="Slayer"><img src="004.jpg" width="150" height ="100" alt="slayer"></a></li>
 				</ul>
 				<ul>
-					<li><img src="01.jpg" width="150" height ="100" alt="megadeath"></li>
-					<li><img src="02.jpg" width="150" height ="100" alt="megadeath"></li>
-					<li><img src="03.jpg" width="150" height ="100" alt="megadeath"></li>
-					<li><img src="04.jpg" width="150" height ="100" alt="megadeath"></li>
+					
 				</ul>
 			</div>
 		</section>
