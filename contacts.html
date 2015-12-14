@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="./jquery-2.1.4.min.js"></script>	
+	<script src="./jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap.min.css">
@@ -10,21 +18,22 @@
 	<link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href=".css/css.css">
+	<link rel="stylesheet" href="./css.css">
 	<link rel="icon" href="./Bildes/favicon.ico" type="image/x-icon">
 	<title>The Big 4 of Hevy metal music </title>
-
+	<!--[if IE]>
+  	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
 </head>
 <body>
 	<section class = "container-fluid">
-<header class = "row">
+	<header class = "row">
 		<h1 class = "hide">Logo</h1>
-		<div class = "col-md-6"  style = "background-color:#fffffff; ">
+		<div class = "col-md-12"  style = "background-color:#fffffff; ">
 		<img src = "./Bildes/icon.jpg" />	
 		</div>		
-</header>
-	<div class = "row">
+	</header><div class = "row">
 			<div class = "col-md-12">
 				<nav class="navbar navbar-inverse">
 				    <div class="navbar-header">
@@ -37,46 +46,47 @@
 				    </div>
 				    <div class="collapse navbar-collapse" id="izvelne">
 				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="index.html">Home</a></li>
-				        <li><a href="gallery.html">Gallery</a></li>
+				        <li><a href="index.html">Home</a></li>
+				        <li ><a href="gallery.html">Gallery</a></li>
 						<li><a href="info.html">Infromation</a></li>
 						<li><a href="comments.html">Comments</a></li>
-						<li ><a href="contacts.html">Contacts</a></li>
-					  </ul>
+						<li class="active"><a href="contacts.html">Contacts</a></li>
+				      </ul>
 				    </div>
 				</nav>
 			</div>
 		</div>
-		<section class = "row">
-		<aside class = "col-md-4">				
-				<img src = "./Bildes/MegAntLogo.jpg" />
-		</aside>
-		<main class="col-md-4">
-			<h1>The Big 4 of heavy metal music industry</h1>
-			<article>
-				<h1 style="color:blue;">Megadeath</h1>			
-			</article>
-			<article>
-				<h1 style="color:red;">Anthrax</h1>			
-			</article>
-			<article>
-				<h1 style="color:green;">Slayer</h1>				
-			</article>
-			<article>
-				<h1 style="color:brown;">Metallica</h1>				
-			</article>
-		</main>
-		<aside class="col-md-4">
-				<img src = "./Bildes/MetSlayLogo.jpg" />
-			</aside>
-		</section>
-	
-	<div class = "row">
-	<footer class="col-md-12" style = "background-color:#78f216;">
+<section class = "row">
+	<aside class = "col-md-4">				
+			<img src = "./Bildes/Profile.jpg" height="250" width="180" />
+	</aside>		
+<main class="col-md-4">
+	<table style="width:30%">
+		  <tr>
+		    <td>Name</td>
+		    <td>Surname</td> 
+		    <td>e-mail</td>
+		    <td>nummber</td>
+		  </tr>
+		  <tr>
+		    <td>Roberts</td>
+		    <td>Pencis</td> 
+		    <td>rob*******cis@inbox.lv</td>
+		    <td>2780****</td>
+		  </tr>
+</table>
+</main>
+<aside class = "col-md-4">				
+			
+	</aside>
+</section>	
+
+<section class = "row">
+		<footer class="col-md-12" style = "background-color:#78f216;">
 		<h1  class = "hide">Autors</h1>
-		<p>Roberts Pencis e-mail: robertspencis@inbox.lv</p>
+		<p>Roberts Pencis </p>
 	</footer>
-	</div>
-	</section>	
+		
+</section>
 </body>
-</html>
+</html>	
