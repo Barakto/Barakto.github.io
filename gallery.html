@@ -2,28 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="./jquery-2.1.4.min.js"></script>
-	<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
-	<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<link rel="stylesheet" href="./lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="./lib/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./lib/css.css">	
+	<link href="./LB/dist/css/lightbox.css" rel="stylesheet"/>	
+	<link rel="icon" type="icon" href="./Pictures/favicon.ico"/>
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap.min.css">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./css.css">
-	<link rel="icon" href="./Bildes/favicon.ico" type="image/x-icon">
-	<title>The Big 4 of Hevy metal music </title>
-	<!--[if IE]>
-  	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<title>Gallery</title>
 
 </head>
 <body>
@@ -31,9 +17,10 @@
 	<header class = "row">
 		<h1 class = "hide">Logo</h1>
 		<div class = "col-md-12"  style = "background-color:#fffffff; ">
-		<img src = "./Bildes/icon.jpg" />	
+		<img src = "./Pictures/icon.jpg" />	
 		</div>		
-	</header><div class = "row">
+	</header>
+	<div class = "row main-menu">
 			<div class = "col-md-12">
 				<nav class="navbar navbar-inverse">
 				    <div class="navbar-header">
@@ -56,52 +43,53 @@
 				</nav>
 			</div>
 		</div>
-		<section class = "row">
+<section class = "row ">
 			<aside class = "col-md-3">				
-				<img src = "./Bildes/MegAntLogo.jpg"/>
+				<img src = "./Pictures/MegAntLogo.jpg" width="200" height ="200"/>
 			</aside>
-		<main class ="col-md-6">
-			<div class = "gallery">
-				<h1  class = "hide">Megadeath</h1>
-				<ul>
-					<li><a class="fancybox" rel="group" href= "./Bildes/01.jpg" title ="MegaDeath"><img src="./Bildes/01.jpg" width="150" height ="100" alt="megadeath"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/010.jpg" title ="Megadeath"><img src="./Bildes/010.jpg" width="150" height ="100" alt="megadeath"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/011.jpg" title ="MegaDeath"><img src="./Bildes/011.jpg" width="150" height ="100" alt="megadeath"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/012.jpg" title ="MegaDeath"><img src="./Bildes/012.jpg" width="150" height ="100" alt="megadeath"></a></li>
-				</ul>
-				<h1  class = "hide">Metallica</h1>
-				<ul>
-					<li><a class="fancybox" rel="group" href= "./Bildes/02.jpg" title ="Metallica"><img src="./Bildes/02.jpg" width="150" height ="100" alt="Metallica"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/020.jpg" title ="Metallica"><img src="./Bildes/020.jpg" width="150" height ="100" alt="Metallica"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/021.jpg" title ="Metallica"><img src="./Bildes/021.jpg" width="150" height ="100" alt="Metallica"></a></li>	
-					<li><a class="fancybox" rel="group" href= "./Bildes/022.jpg" title ="Metallica"><img src="./Bildes/022.jpg" width="150" height ="100" alt="Metallica"></a></li>		
-				</ul>
-				<h1  class = "hide">Anthrax</h1>
-				<ul>
-					<li><a class="fancybox" rel="group" href= "./Bildes/03.jpg" title ="Anthrax"><img src="./Bildes/03.jpg" width="150" height ="100" alt="Anthrax"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/030.jpg" title ="Anthrax"><img src="./Bildes/030.jpg" width="150" height ="100" alt="Anthrax"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/031.jpg" title ="Anthrax"><img src="./Bildes/031.jpg" width="150" height ="100" alt="Anthrax"></a></li>	
-					<li><a class="fancybox" rel="group" href= "./Bildes/032.jpg" title ="Anthrax"><img src="./Bildes/032.jpg" width="150" height ="100" alt="Anthrax"></a></li>		
-				</ul>
-				<h1  class = "hide">Slayer</h1>
-				<ul>
-					<li><a class="fancybox" rel="group" href= "./Bildes/04.jpg" title ="Slayer"><img src="./Bildes/04.jpg" width="150" height ="100" alt="Slayer"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/040.jpg" title ="Slayer"><img src="./Bildes/040.jpg" width="150" height ="100" alt="Slayer"></a></li>
-					<li><a class="fancybox" rel="group" href= "./Bildes/041.jpg" title ="Slayer"><img src="./Bildes/041.jpg" width="150" height ="100" alt="Slayer"></a></li>	
-					<li><a class="fancybox" rel="group" href= "./Bildes/042.jpg" title ="Slayer"><img src="./Bildes/042.jpg" width="150" height ="100" alt="Slayer"></a></li>		
-				</ul>
-			</div>
+			<main class ="col-md-6">
+			<div class = "Gallery">
+				<h1 class = "hide">MegaDeath</h1>
+					<table >
+					  <tr>
+					    <td><a href="./Pictures/01.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/01.jpg"/></a></td>
+					    <td><a href="./Pictures/010.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/010.jpg"/></a></td> 
+					    <td><a href="./Pictures/011.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/011.jpg"/></a></td>
+					    <td><a href="./Pictures/012.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/012.jpg"/></a></td>
+					  </tr>
+					  <tr>
+					    <td><a href="./Pictures/02.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/02.jpg"/></a></td>
+					    <td><a href="./Pictures/020.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/020.jpg"/></a></td> 
+					    <td><a href="./Pictures/021.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/021.jpg"/></a></td>
+					    <td><a href="./Pictures/022.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/022.jpg"/></a></td>
+					  </tr>
+					  <tr>
+					    <td><a href="./Pictures/03.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/03.jpg"/></a></td>
+					    <td><a href="./Pictures/030.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/030.jpg"/></a></td> 
+					    <td><a href="./Pictures/031.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/031.jpg"/></a></td>
+					    <td><a href="./Pictures/032.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/032.jpg"/></a></td>
+					  </tr>
+					  <tr>
+					    <td><a href="./Pictures/04.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/04.jpg"/></a></td>
+					    <td><a href="./Pictures/040.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/040.jpg"/></a></td> 
+					    <td><a href="./Pictures/041.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/041.jpg"/></a></td>
+					    <td><a href="./Pictures/042.jpg" rel="lightbox[html]" title="MegaDeath"><img src = "./Pictures/042.jpg"/></a></td>
+					  </tr>
+					</table>			
+			</div>	
 			</main>
 			<aside class = "col-md-3">				
-				<img src = "./Bildes/MetSlayLogo.jpg" />
-			</aside>
-		</section>
-		<div class = "row">
+				<img src = "./Pictures/MetSlayLogo.jpg" width="200" height ="200" />
+			</aside>			
+	<div class = "row">
 	<footer class="col-md-12" style = "background-color:#ADADAD;">
 		<h1  class = "hide">Autors</h1>
-		<p>Roberts Pencis All right reserved </p>
+		<p>Roberts Pencis EDP-1</p>
 	</footer>
-	</div>	
+	
 </section>
+<script src="./lib/jquery-2.1.4.min.js"></script>
+<script src="./lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script src="./LB/dist/js/lightbox.js"></script>
 </body>
 </html>

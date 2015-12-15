@@ -1,0 +1,36 @@
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+.user {
+    border-radius: 25px;
+    border: 2px solid #000;
+    padding: 20px; 
+    width: auto ;
+    height: auto; 
+}
+.Gallery {
+	list-style: none
+
+}
+
+
+.Gallery img{
+	width: 150px;
+	height: 80px;
+	display: block;
+	padding: 5px;
+}
+
+.Gallery img:hover{
+	border: 1px solid #000;
+}
+footer{
+	height: 30px;
+    position: fixed;    
+    bottom: 0px;
+    background-color: #ADADAD;
+    color: #000;
+    text-align: center;
+
+}
+
